@@ -1,0 +1,12 @@
+@import "app/styles/mixins";
+
+.catalog {
+  @include flex-center;
+}
+
+.text {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--color-white);
+}

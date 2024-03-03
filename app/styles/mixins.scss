@@ -1,0 +1,108 @@
+@mixin mobile {
+  @media (max-width: #{768px - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile--l {
+  @media (max-width: #{425px - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile--s {
+  @media (max-width: #{375px - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile--m {
+  @media (max-width: #{345px - 1px}) {
+    @content;
+  }
+}
+
+@mixin not-mobile {
+  @media (min-width: #{768px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{768px}) and (max-width: #{1024px - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop--l {
+  @media (max-width: #{1440px - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop--s {
+  @media (max-width: #{1204px - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{1024px}) {
+    @content;
+  }
+}
+
+@mixin not-desktop {
+  @media (max-width: #{1024px - 1px}) {
+    @content;
+  }
+}
+
+@mixin clearButtonStyle {
+  background: transparent;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  -webkit-tap-highlight-color: transparent;
+  transition: none;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

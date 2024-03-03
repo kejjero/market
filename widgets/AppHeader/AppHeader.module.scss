@@ -1,0 +1,11 @@
+@import "app/styles/mixins";
+
+.header {
+  @include flex-center;
+  box-shadow: var(--shadow-header);
+  width: 100%;
+
+  .wrapper {
+    @include flex-center-between;
+  }
+}
